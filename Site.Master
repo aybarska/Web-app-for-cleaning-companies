@@ -20,6 +20,55 @@
 </head>
 <body>
     <form runat="server">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">XYZ Temizlik</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Default">Anasayfa <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/iletisim">Iletisim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/musteri">Musteri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/yonetici">Yonetici</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="...">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Arama</button>
+                </form>
+            </div>
+        </nav>
+
+
+
+
+
+
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+
+                <p class="text-center">
+                    <br>
+                    <br>
+                    &copy; <%: DateTime.Now.Year %> - XYZ Temizlik Sirketi Web Uygulamasi
+                </p>
+            </footer>
+        </div>
+
+
         <asp:ScriptManager runat="server">
             <Scripts>
                 <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
@@ -39,40 +88,6 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-
-        <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:#620082">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">XYZ Temizlik</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Anasayfa</a></li>
-                        <li><a runat="server" href="~/iletisim">Iletisim</a></li>
-                        <li><a runat="server" href="~/musteri">Musteri</a></li>
-                        <li><a runat="server" href="~/yonetici">Yonetici</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-
-                <p class="text-center">
-                    <br>
-                    <br>
-                    &copy; <%: DateTime.Now.Year %> - XYZ Temizlik Sirketi Web Uygulamasi</p>
-            </footer>
-        </div>
-
     </form>
 </body>
 </html>

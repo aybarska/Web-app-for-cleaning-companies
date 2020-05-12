@@ -107,6 +107,7 @@
   <ItemGroup>
     <Content Include="admin.aspx" />
     <Content Include="adminDuzenle.aspx" />
+    <Content Include="Content\bootstrap_superhero.css" />
     <Content Include="fotolar\delete.png" />
     <Content Include="fotolar\hiclipart.com.png" />
     <Content Include="giris.aspx" />

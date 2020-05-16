@@ -17,34 +17,35 @@
                     <td>
                         <div align="center">
                             <h2>XYZ Temizlik.</h2>
-                            <h3>Musterimiz iseniz giris yapin ya da kayit talebi olusturun.</h3>
-                            <p>Talebiniz sonrasi musteri temsilcilerimiz size ulasacak.</p>
+                            <h3>Musterimiz iseniz giris yapin ya da kayit olusturun.</h3>
+                            <p>Kayit sonrasi musteri temsilcilerimiz size ulasacak.</p>
                             <br />
                         </div>
                     </td>
-                    <br />
+                    
                     <td>
+                        <br />
                         <div class="container">
                             <br />
                             <div class="alert alert-dismissible alert-info">
                                 <h2>Giris:</h2>
                                 <div class="form-group">
                                     <label for="formGroupExampleInput">Sirket Adi  </label>
-                                    <input id="formGroupExampleInput" class="form-control" type="text" placeholder="Sirket Adi" />
-                                </div>
+                                    <asp:TextBox ID="txtKullaniciAdi" runat="server"></asp:TextBox>
+
+                                &nbsp;</div>
 
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Sifre</label>
-                                    <input id="exampleInputPassword1" class="form-control" type="password" placeholder="Sifre" />
-                                </div>
-                                <div class="form-check">
-                                    <input id="exampleCheck1" class="form-check-input" type="checkbox" />
-                                    <label class="form-check-label" for="exampleCheck1">Bilgilerimi hatirla.</label>
-                                </div>
+                                    <label for="exampleInputPassword1">Sifre  </label>
+                                    <asp:TextBox ID="txtSifre" runat="server" TextMode="Password"></asp:TextBox>
+
+                                &nbsp;</div>
                                 <br />
-                                <button class="btn btn-primary btn-lg btn-block" type="submit">Giris Yap</button>
+                             
+                                <asp:Button ID="giris" runat="server" Text="Giris Yap" class="btn btn-primary btn-lg btn-block" OnClick="giris_Click"/>
+                                <asp:Label ID="lblBilgi" runat="server" Text=""></asp:Label>
                                 <br />
-                            </div
+                            </div>
                         </div>
 
                     </td>
@@ -58,7 +59,7 @@
                             <div class="form-row">
                                 <div class="col-md-4 mb-3">
                                     <label for="validationServer01">Sirket Adi:</label>
-                                    <asp:TextBox ID="SirketAdi" runat="server" class="form-control" OnTextChanged="TextBox1_TextChanged" Width="1301px"></asp:TextBox>
+                                    <asp:TextBox ID="SirketAdi" runat="server" class="form-control" Width="1301px"></asp:TextBox>
                                 </div>
                                 &nbsp;
                                 <div class="col-md-4 mb-3">
@@ -118,7 +119,7 @@
                                 <div class="col-md-4 mb-3">
                                     <br>
 
-                                    <asp:Button ID="gonder" runat="server" Text="Formu Gonder" class="btn btn-primary btn-lg btn-block" OnClick="gonder_Click" />
+                                    <asp:Button ID="gonder" runat="server" Text="Formu Gonder" class="btn btn-primary" OnClick="gonder_Click" />
 
                                 </div>
                             </div>

@@ -15,6 +15,42 @@ namespace TemizlikSirketi2
     {
 
         /// <summary>
+        /// txtKullaniciAdi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtKullaniciAdi;
+
+        /// <summary>
+        /// txtSifre control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSifre;
+
+        /// <summary>
+        /// giris control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button giris;
+
+        /// <summary>
+        /// lblBilgi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblBilgi;
+
+        /// <summary>
         /// SirketAdi control.
         /// </summary>
         /// <remarks>

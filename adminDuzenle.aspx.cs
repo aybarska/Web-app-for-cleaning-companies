@@ -55,7 +55,7 @@ namespace TemizlikSirketi2
             komut.Parameters.AddWithValue("@p10", id);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
-
+            Response.Redirect("~/adminDuzenle.aspx?SirketID=" + id);
         }
     }
 }

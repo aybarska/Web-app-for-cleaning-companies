@@ -16,6 +16,12 @@ namespace TemizlikSirketi2
         protected void Page_Load(object sender, EventArgs e)
         {
 
+
+            if (Session["Kullanici"] == null)
+                Response.Redirect("admingiris.aspx");
+            else
+                Response.Write("Hoşgeldiniz " + Session["Kullanici"].ToString());
+
             if (Page.IsPostBack == false)
             {
                 id = Request.QueryString["SirketID"];
@@ -30,10 +36,11 @@ namespace TemizlikSirketi2
             //silme islem
             if (islem == "sil")
             {
-                SqlCommand komutsil = new SqlCommand("Delete From Musteriler where SirketID=@p1",bgl.baglanti());
+                SqlCommand komutsil = new SqlCommand("Delete From Musteriler where SirketID=@p1", bgl.baglanti());
                 komutsil.Parameters.AddWithValue("@p1", id);
                 komutsil.ExecuteNonQuery();
                 bgl.baglanti().Close();
+                Response.Redirect("~/admin.aspx");
 
             }
 

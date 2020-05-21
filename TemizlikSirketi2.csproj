@@ -107,10 +107,10 @@
   <ItemGroup>
     <Content Include="admin.aspx" />
     <Content Include="adminDuzenle.aspx" />
+    <Content Include="admingiris.aspx" />
     <Content Include="Content\bootstrap_superhero.css" />
     <Content Include="fotolar\delete.png" />
     <Content Include="fotolar\hiclipart.com.png" />
-    <Content Include="giris.aspx" />
     <Content Include="musteri.aspx" />
     <Content Include="iletisim.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -130,7 +130,6 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="yonetici.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -162,6 +161,8 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="StyleSheet1.css" />
+    <Content Include="talep.aspx" />
+    <Content Include="taleplerim.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -182,14 +183,14 @@
     <Compile Include="adminDuzenle.aspx.designer.cs">
       <DependentUpon>adminDuzenle.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="giris.aspx.cs">
-      <DependentUpon>giris.aspx</DependentUpon>
+    <Compile Include="admingiris.aspx.cs">
+      <DependentUpon>admingiris.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="giris.aspx.designer.cs">
-      <DependentUpon>giris.aspx</DependentUpon>
+    <Compile Include="admingiris.aspx.designer.cs">
+      <DependentUpon>admingiris.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="musteri.aspx.cs">
       <DependentUpon>musteri.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -238,19 +239,26 @@
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
     <Compile Include="sqlsinif.cs" />
+    <Compile Include="talep.aspx.cs">
+      <DependentUpon>talep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="talep.aspx.designer.cs">
+      <DependentUpon>talep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="taleplerim.aspx.cs">
+      <DependentUpon>taleplerim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="taleplerim.aspx.designer.cs">
+      <DependentUpon>taleplerim.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="yonetici.aspx.cs">
-      <DependentUpon>yonetici.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="yonetici.aspx.designer.cs">
-      <DependentUpon>yonetici.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

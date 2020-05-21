@@ -52,15 +52,21 @@ namespace TemizlikSirketi2
             SqlCommand sorgula = new SqlCommand("SELECT * FROM Musteriler WHERE SirketAdi=@KullaniciAdi AND SirketSifre=@Sifre", baglan);
             sorgula.Parameters.AddWithValue("@KullaniciAdi", kullanici);
             sorgula.Parameters.AddWithValue("@Sifre", sifre);
+<<<<<<< HEAD
             SqlDataAdapter sda = new SqlDataAdapter(sorgula);
             DataTable dt = new DataTable();
             sda.Fill(dt);
+=======
+>>>>>>> master
             baglan.Open();
             SqlDataReader oku = sorgula.ExecuteReader();
             if (oku.Read())
             {
                 Session["Kullanici1"] = oku["SirketAdi"].ToString();
+<<<<<<< HEAD
                 Session["SirketID"] = oku["SirketID"].ToString();
+=======
+>>>>>>> master
                 Response.Redirect("talep.aspx");
             }
             else

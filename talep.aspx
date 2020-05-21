@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="talep.aspx.cs" Inherits="TemizlikSirketi2.talep" %>
+<<<<<<< HEAD
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -121,4 +122,8 @@
     </table>
 
 
+=======
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
+>>>>>>> master
 </asp:Content>

@@ -162,7 +162,10 @@
     <Content Include="Site.Master" />
     <Content Include="StyleSheet1.css" />
     <Content Include="talep.aspx" />
+<<<<<<< HEAD
     <Content Include="taleplerim.aspx" />
+=======
+>>>>>>> master
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -246,6 +249,7 @@
     <Compile Include="talep.aspx.designer.cs">
       <DependentUpon>talep.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="taleplerim.aspx.cs">
       <DependentUpon>taleplerim.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -253,6 +257,8 @@
     <Compile Include="taleplerim.aspx.designer.cs">
       <DependentUpon>taleplerim.aspx</DependentUpon>
     </Compile>
+=======
+>>>>>>> master
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
